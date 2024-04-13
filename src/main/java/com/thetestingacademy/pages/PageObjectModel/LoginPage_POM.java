@@ -15,10 +15,10 @@ public class LoginPage_POM extends CommonToAllPage {
 
 
     //  Page Locators
-    By username = By.id("login-username");
-    By password = By.id("login-password");
-    By signButton = By.id("js-login-btn");
-    By error_message = By.id("js-notification-box-msg");
+    private By username = By.id("login-username");
+    private By password = By.id("login-password");
+   private By signButton = By.id("js-login-btn");
+    private By error_message = By.id("js-notification-box-msg");
 
 
     // Page Actions

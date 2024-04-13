@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import static com.thetestingacademy.driver.DriverManager.getDriver;
+//import static com.thetestingacademy.driver.DriverManagerTL.getDriver;
 
 public class CommonToAllPage {
 
@@ -28,9 +29,18 @@ public class CommonToAllPage {
         getDriver().findElement(by).click();
     }
 
+    public void clickElement(WebElement by) {
+        by.click();
+    }
+
     public void enterInput(By by, String key) {
         getDriver().findElement(by).sendKeys(key);
     }
+
+    public void enterInput(WebElement element, String key) {
+        element.sendKeys(key);
+    }
+
 
     // Wait Explicits here
 

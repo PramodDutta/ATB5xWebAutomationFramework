@@ -21,6 +21,11 @@ public class CommonToAllTest {
     }
 
 
+    public void testPrint(){
+        System.out.println("Hi I am basse");
+    }
+
+
 
 
 

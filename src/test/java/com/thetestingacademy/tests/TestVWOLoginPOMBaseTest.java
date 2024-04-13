@@ -11,8 +11,10 @@ import static org.assertj.core.api.Assertions.*;
 
 public class TestVWOLoginPOMBaseTest extends CommonToAllTest {
 
+
     @Test(groups = {"smoke"}, priority = 1)
     public void testLoginNegative() {
+
         LoginPage_POM loginPagePom = new LoginPage_POM();
         loginPagePom.openVWOLoginURL();
         String error_msg_text = loginPagePom.loginToVWOInvalidCreds();
