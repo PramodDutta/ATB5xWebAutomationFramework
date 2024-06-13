@@ -26,6 +26,7 @@ public class DriverManagerTL {
 
     public static void init() {
         if (Objects.isNull(DriverManagerTL.getDriver())) {
+                //WebDriver driver = new EdgeDriver();
                 WebDriver driver = new EdgeDriver();
                 setDriver(driver);
         }
